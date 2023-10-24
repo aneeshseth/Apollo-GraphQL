@@ -32,7 +32,7 @@ function makeClient() {
   });
 }
 
-export function ApolloWrapper({ children }) {
+export function ApolloWrapper({ children }: any) {
   return (
     <ApolloNextAppProvider makeClient={makeClient}>
       {children}
